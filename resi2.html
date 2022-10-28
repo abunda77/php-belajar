@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>jQuery post form data with .ajax() method by codeofaninja.com</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css ">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+      <style type="text/css">
+        .errorMsg {
+            border: 1px solid red;
+        }
+
+        .message {
+            color: red;
+            font-weight: bold;
+        }
+
+        ul.timeline {
+            list-style-type: none;
+            position: relative;
+        }
+
+        ul.timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+            z-index: 400;
+        }
+
+        ul.timeline>li {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul.timeline>li:before {
+            content: ' ';
+            background: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #22c0e8;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>jQuery post form data with the .ajax() method</h1>
+    <div>Filling out and submitting the form below to receive a response.</div>
+    <!-- our form -->
+    <form id="userForm" action="" method="post">
+      <div class="container col-4">
+        
+      
+       <div>      
+        <input type="text" name="awb"  placeholder="Masukkan No Resi" class="form-control"/>
+      </div>
+      <div>
+        <select name="courier" id="courier" class="form-control">
+            <option >Pilih Kurir</option>
+            <option value="jne">JNE</option>
+            <option value="jnt">JNT</option>
+            <option value="sicepat">SICEPAT</option>
+            <option value="anteraja">Anter AJA</option>
+            <option value="spx">Shopee Express</option>
+            <option value="pos">POS Indonesia</option>
+            <option value="tiki">TIKI</option>
+            <option value="ide">ID Express</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+      </div>
+    </div>
+    </form>
+    <!-- where the response will be displayed -->
+    <div id="response"></div>
+   
+    <script src="js/resi.js"> </script>
+    
+  </body>
+</html>
