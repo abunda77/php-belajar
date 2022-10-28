@@ -3,3 +3,4 @@ Buat latihan jquery ajax dan API
 
 Tukang coding
 saya adalah tukang coding
+Jadilah master
