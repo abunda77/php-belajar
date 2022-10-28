@@ -4,6 +4,7 @@
 ini_set('display_errors', 0);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+require 'config.php';
 
 if (isset($_GET['Submit'])) {
 
@@ -81,7 +82,8 @@ if (isset($_GET['Submit'])) {
         //$json = '';
 
         $url = "https://api.binderbyte.com/v1/track";
-        $api_key = "7c25ea95caba25ee465342114fb5c1bd53890364dc1852130007c77630df5284";
+
+        $api_key = $keys; // API Key ada di file config.php
 
         $curl = curl_init();
 
@@ -136,14 +138,14 @@ if (isset($_GET['Submit'])) {
         echo "Message :" . $cek_message;
         echo "</div>";
 
-        
+
 
 
 
 
         function history($cek_data_history)
         {
-           
+
             echo "<div class='container mt-5 mb-5'>
         <div class='row'>
             <div class='col-md-6 offset-md-3'>
@@ -152,23 +154,20 @@ if (isset($_GET['Submit'])) {
             foreach ($cek_data_history as $row) { ?>
 
 
-                    <li>
-                        <?=  $row["date"]  ?>
-                        <?= $row['desc']; ?></p>
-                        <?= $row['location'];  ?></p>
-                
-                    </li>
-                    <?php } ?>
-                    <?php echo "
+                <li>
+                    <?= $row["date"]  ?>
+                    <?= $row['desc']; ?></p>
+                    <?= $row['location'];  ?></p>
+
+                </li>
+            <?php } ?>
+<?php echo "
                 </ul>
             </div>
         </div>
     </div>";
-
-               
-            
         }
-        
+
         $summary = "
             <p align=left>
             <br><br>Cek status :<b> $cek_status </b>
@@ -211,7 +210,7 @@ if (isset($_GET['Submit'])) {
     <link rel="stylesheet" href="css/bootstrap.min.css ">
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+
     <style type="text/css">
         .errorMsg {
             border: 1px solid red;
@@ -327,9 +326,9 @@ if (isset($_GET['Submit'])) {
         </table>
     </div>
 
-    
-    
-   
+
+
+
 
 
 </body>

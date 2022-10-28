@@ -10,8 +10,8 @@ $awb = $_POST['awb'];
 $courier = $_POST['courier'];
 
 $url = "https://api.binderbyte.com/v1/track";
-//$api_key = "7c25ea95caba25ee465342114fb5c1bd53890364dc1852130007c77630df5284";
-$api_key = $keys;
+
+$api_key = $keys; // API Key ada di file config.php
 
 $curl = curl_init();
 
