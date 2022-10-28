@@ -4,11 +4,14 @@ ini_set('display_errors', 0);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+require 'config.php';
+
 $awb = $_POST['awb'];
 $courier = $_POST['courier'];
 
 $url = "https://api.binderbyte.com/v1/track";
-$api_key = "7c25ea95caba25ee465342114fb5c1bd53890364dc1852130007c77630df5284";
+//$api_key = "7c25ea95caba25ee465342114fb5c1bd53890364dc1852130007c77630df5284";
+$api_key = $keys;
 
 $curl = curl_init();
 
@@ -150,3 +153,4 @@ $data_pengiriman = "
         </td>
     </tr>
 </table>
+php
