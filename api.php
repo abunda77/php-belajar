@@ -87,13 +87,13 @@ function history($cek_data_history)
     foreach ($cek_data_history as $row) { ?>
 
 
-        <li>
-            <?= $row["date"]  ?>
-            <?= $row['desc']; ?></p>
-            <?= $row['location'];  ?></p>
+<li>
+    <?= $row["date"]  ?>
+    <?= $row['desc']; ?></p>
+    <?= $row['location'];  ?></p>
 
-        </li>
-    <?php } ?>
+</li>
+<?php } ?>
 <?php echo "
                 </ul>
             </div>
@@ -128,29 +128,55 @@ $data_pengiriman = "
 ?>
 
 
-<div class="card d-grid gap-3 mx-auto" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title p-2 bg-light border">Status : <?= $cek_data_summary_status ?></h5>
-        <h6 class="card-subtitle mb-2 text-muted p-2 bg-light border"><?= $data_pengiriman ?></h6>
-        <p class="card-text p-2 bg-light border"><?= $summary; ?></p>
 
-    </div>
 
+
+
+<!-- Mulia di sini -->
+
+<div class="table-responsive" style="
+        margin-left: 14px;
+        padding-right: 100px;
+        padding-left: 100px;
+        margin-top: 57px;
+        margin-bottom: 39px;
+      ">
+    <table class="table table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Summary</th>
+                <th>Data Pengiriman</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+
+                    <h6 class="card-subtitle mb-2 text-muted p-2 bg-light border">Status :
+                        <b><?= $cek_data_summary_status ?></b><br><?= $data_pengiriman ?>
+                    </h6>
+                </td>
+                <td>
+                    <p class="card-text p-2 bg-light border"><?= $summary; ?></p>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered">
+        <tr>
+            <td>
+
+                <?php
+
+                history($cek_data_history);
+
+                ?>
+
+            </td>
+        </tr>
+    </table>
 
 </div>
-
-
-<table class="table table-bordered">
-    <tr>
-        <td>
-
-            <?php
-
-            history($cek_data_history);
-
-            ?>
-
-        </td>
-    </tr>
-</table>
-php
