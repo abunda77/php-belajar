@@ -2,5 +2,8 @@ Sesi Belajar Coding PHP
 Buat latihan jquery ajax dan API
 
 Tukang coding
+
 saya adalah tukang coding
-Jadilah master
+Jadilah tukang coding
+
+Hanya merapikan
