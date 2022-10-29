@@ -7,11 +7,14 @@ saya adalah tukang coding
 <<<<<<< HEAD
 Jadilah master
 
-Akhir sebuah perjalanan
-=======
+# Akhir sebuah perjalanan
+
 Jadilah tukang coding
 
 Hanya merapikan
->>>>>>> c269830f296df976a816ea049d5467a8414f766a
+
+> > > > > > > c269830f296df976a816ea049d5467a8414f766a
 
 Bisa khan
+
+Ya bisa
