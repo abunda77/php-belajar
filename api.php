@@ -49,9 +49,9 @@ $cek_message = $data["message"];
 
 
 if ($cek_status == 400 or $cek_status == null or $cek_status == 500 or $cek_status == 503 or $cek_status == 504 or $cek_status == 505) {
-    echo "<div class='alert alert-danger fs-2 text-center' role='alert'
+    echo "<div class='alert alert-danger fs-6 text-center' role='alert'
     style='margin-left: 150px;margin-right: 190px;margin-top: 55px;padding-left: 85px;padding-right: 61px;'><span
-        class='fs-3' style='margin-right: -1px;margin-left: -85px;''>Paket tidak terlacak ...!</span></div>
+        class='fs-6' style='margin-right: -1px;margin-left: -85px;''>Paket tidak terlacak ...!</span></div>
     <img src='assets/crying.gif' class='img-fluid mx-auto d-block' width='200px' height='200px' loading='lazy'><br>
     <footer class='text-center py-4'>
     <div class='container'>
@@ -144,9 +144,9 @@ $data_pengiriman = "
 
 
 <!-- Mulia di sini -->
-<div class="alert alert-success fs-2 text-center" role="alert"
+<div class="alert alert-success fs-6 text-center" role="alert"
     style="margin-left: 150px;margin-right: 190px;margin-top: 55px;padding-left: 85px;padding-right: 61px;"><span
-        class="fs-3" style="margin-right: -1px;margin-left: -85px;">Status : <strong>Delivered </strong></span></div>
+        class="fs-6" style="margin-right: -1px;margin-left: -85px;">Status : <strong>Delivered </strong></span></div>
 <div class="table-responsive" style="margin-top: 57px;margin-bottom: 39px;">
     <table class="table table-striped table-hover table-bordered">
         <thead>
