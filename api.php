@@ -50,7 +50,16 @@ $cek_message = $data["message"];
 
 if ($cek_status == 400 or $cek_status == null or $cek_status == 500 or $cek_status == 503 or $cek_status == 504 or $cek_status == 505) {
     echo "<h1 class='display-1 text-center mt-5'>Paket tidak terlacak</h1><br>
-    <img src='assets/crying.gif' class='img-fluid mx-auto d-block' width='200px' height='200px' loading='lazy'><br>";
+    <img src='assets/crying.gif' class='img-fluid mx-auto d-block' width='200px' height='200px' loading='lazy'><br>
+    <footer class='text-center py-4'>
+    <div class='container'>
+        <div class='row row-cols-1 row-cols-lg-3'>
+            <div class='col-lg-10 offset-lg-1 offset-xl-1 offset-xxl-1'>
+                <p class='fs-6 fw-light text-center my-2'><strong>Copyright © 2022</strong><a href='https://kangmaserie.my.id' target='_blank'><strong> Kangmaserie.my.id</strong></a></p>
+            </div>
+        </div>
+    </div>
+</footer>";
     die();
 }
 
@@ -134,13 +143,7 @@ $data_pengiriman = "
 
 <!-- Mulia di sini -->
 
-<div class="table-responsive" style="
-        margin-left: 14px;
-        padding-right: 100px;
-        padding-left: 100px;
-        margin-top: 57px;
-        margin-bottom: 39px;
-      ">
+<div class="table-responsive" style="margin-top: 57px;margin-bottom: 39px;">
     <table class="table table-striped table-hover table-bordered">
         <thead>
             <tr>
@@ -178,5 +181,14 @@ $data_pengiriman = "
             </td>
         </tr>
     </table>
-
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col-lg-10 offset-lg-1 offset-xl-1 offset-xxl-1">
+                    <p class="fs-6 fw-light text-center my-2"><strong>Copyright © 2022</strong><a
+                            href="https://kangmaserie.my.id" target="_blank"><strong> Kangmaserie.my.id</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
