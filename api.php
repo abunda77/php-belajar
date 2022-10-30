@@ -50,7 +50,7 @@ $cek_message = $data["message"];
 
 if ($cek_status == 400 or $cek_status == null or $cek_status == 500 or $cek_status == 503 or $cek_status == 504 or $cek_status == 505) {
     echo "<h1 class='display-1 text-center mt-5'>Paket tidak terlacak</h1><br>
-    <img src='assets/crying.gif' class='img-fluid mx-auto d-block' width='200px' height='200px'><br>";
+    <img src='assets/crying.gif' class='img-fluid mx-auto d-block' width='200px' height='200px' loading='lazy'><br>";
     die();
 }
 

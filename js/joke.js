@@ -8,7 +8,7 @@
 
         let output =            
             `
-            <p><i>${data.data}</i></p>
+            <p><i>"${data.data}"</i></p>
             `;
 
         // show the data
