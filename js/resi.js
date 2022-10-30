@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  // how to show elements on page load
+
+  
+  
     $('#userForm').submit(function() {
       // showing that something is loading
       $('#response').html("<br><br><p align='center'><b>Process please wait...</b><br><br><img src='assets/loader.gif' width='100' height='100'></p>");

@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+  // how to show elements on page load 
+  $('#response').html("<br><br><p align='center'><b>Ok</b><br><br></p>");
+  
     $('#userForm').submit(function() {
       // showing that something is loading
       $('#response').html("<b>Loading response...</b>");
