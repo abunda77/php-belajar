@@ -186,7 +186,7 @@ $detail = $datas["Infogempa"]["gempa"];
             'packages': ['map'],
             // Note: you will need to get a mapsApiKey for your project.
             // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-            'mapsApiKey': 'AIzaSyAAXMUlXr_zZyfExa5J50ky0Yb-jlS7RNI'
+            'mapsApiKey': ''
 
         });
         google.charts.setOnLoadCallback(drawMap);
